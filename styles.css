@@ -1,0 +1,97 @@
+/* To-Do List Styling */
+
+body {
+  background: url(img/backgroun_image.jpg) no-repeat center center/ cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-task-container {
+  width: 350px;
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px;
+  display: flex;
+}
+
+input {
+  margin-right: 10px;
+  flex: 5;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+button {
+  flex: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  color: green;
+  font-size: 1.3rem;
+  border: green solid 2px;
+  padding: 5px;
+  margin: 2px;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
+}
+
+/* Styling for the tasks that get added to the to-do list */
+
+.task {
+  background-color: lightpink;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 350px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task li {
+  list-style: none;
+  flex: 4;
+  margin: 5px;
+  font-size: 1.3rem;
+}
+
+.task button {
+  flex: 0.5;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.task .check-btn {
+  margin-right: 5px;
+  border: orange solid 2px;
+  color: orange;
+  box-shadow: 0 0 3px orange;
+  font-size: 1.4rem;
+}
+
+.task .check-btn:hover {
+  background-color: orange;
+  color: white;
+}
+
+.task .remove-btn {
+  margin-right: 5px;
+  border: solid 2px red;
+  color: red;
+  box-shadow: 0 0 3px red;
+  font-size: 1.4rem;
+}
+
+.task .remove-btn:hover {
+  background-color: red;
+  color: white;
+}
